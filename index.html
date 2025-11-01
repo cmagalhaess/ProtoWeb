@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProtoWeb Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 ProtoWeb Studio</h1>
+    <div class="toolbar">
+      <button id="saveBtn">💾 Salvar Projeto</button>
+      <button id="exportBtn">📤 Exportar HTML</button>
+      <button id="clearBtn">🗑️ Limpar Tudo</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Componentes</h2>
+      <div class="component" draggable="true" data-type="button">Botão</div>
+      <div class="component" draggable="true" data-type="text">Texto</div>
+      <div class="component" draggable="true" data-type="image">Imagem</div>
+      <div class="component" draggable="true" data-type="input">Campo</div>
+      <div class="component" draggable="true" data-type="card">Card</div>
+      <div class="component" draggable="true" data-type="container">Container</div>
+    </aside>
+
+    <!-- Área de trabalho -->
+    <section id="workspace" class="workspace" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p class="placeholder">Arraste os componentes aqui</p>
+    </section>
+
+    <!-- Painel de propriedades -->
+    <aside class="properties">
+      <h2>Propriedades</h2>
+      <div id="propsContent">
+        <p>Nenhum elemento selecionado.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>ProtoWeb Studio © 2025 | Projeto Acadêmico UNA - ODS 9</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
