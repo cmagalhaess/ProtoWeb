@@ -50,4 +50,5 @@ O ProtoWeb Studio se alinha a essa meta ao oferecer uma ferramenta gratuita e ac
 ## 🧪 Execução local
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/cmagalhaess/ProtoWeb.git
+   git clone https://github.com/cmagalhaess/ProtoWeb
+   
